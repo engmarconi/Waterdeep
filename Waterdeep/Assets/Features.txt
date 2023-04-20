@@ -1,0 +1,66 @@
+37.88811869886455,-80.65650087036173,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 1
+37.88810176422206,-80.65620046295206,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 2
+37.8882160729833,-80.65646600164453,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 3
+37.8881906710517,-80.65617632307092,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 4
+37.88829651237557,-80.65646868385355,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 5
+37.888277460948494,-80.65619509853403,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 6
+37.88844892361466,-80.6564794126896,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 7
+37.888366367566,-80.656189734116,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 8
+37.88852724593426,-80.65647404827158,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 9
+37.88844045633189,-80.65619509853403,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 10
+37.888590750456565,-80.65647404827158,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 11
+37.88850819456691,-80.65618705190698,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 12
+37.88857169910565,-80.65619509853403,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 12
+37.88871352571105,-80.65648745931665,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 13
+37.888707175271854,-80.65621655620615,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 14
+37.892073307780535,-80.65279342554788,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 1
+37.89209024150957,-80.65270491265039,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 2
+37.89204367374537,-80.65264858626108,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 3
+37.892009806262,-80.65260298870783,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 4
+37.8919780554822,-80.65247424267511,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 5
+37.89204367374537,-80.6525627555726,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 6
+37.89203732359342,-80.65237500094156,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 7
+37.891973822043845,-80.65230794571619,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 8
+37.891899736833444,-80.65234013222437,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 9
+37.89188068633873,-80.65246083163004,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 10
+37.89188703650419,-80.6525627555726,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 11
+37.89191243716054,-80.65263249300699,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 12
+37.89197170532458,-80.6527236881135,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 13
+37.89195053812861,-80.65281488322,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 14
+37.89193995452835,-80.65290071390848,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 15
+37.89191243716054,-80.65296508692484,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 16
+37.891931487647035,-80.6530670108674,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 17
+37.891944187968626,-80.6531555237649,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 18
+37.89196112172736,-80.65330840967874,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 19
+37.891933604367466,-80.65341838024835,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 20
+37.89202038985222,-80.65351493977289,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 21
+37.89210082508824,-80.65343447350244,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 22
+37.892064840914564,-80.65319575690012,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 23
+37.89208177464554,-80.65311260842066,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 24
+37.892069074347674,-80.65296240471582,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 25
+37.89842202954321,-80.65279782064893,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 1
+37.89837334924922,-80.65269992001988,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 11
+37.898351125626014,-80.65262213595845,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 19
+37.89833207680078,-80.65251887091138,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 29
+37.89839825846865,-80.65078099844101,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 187
+37.89845752141096,-80.64986368295791,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 267
+37.89827501341795,-80.65285204707737,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 2
+37.89827712995595,-80.65279303847905,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 4
+37.89824961495697,-80.65272061883564,http://maps.google.com/mapfiles/kml/shapes/info-i.png,Number: 14
+37.89264229538895,-80.65832452206661,http://maps.google.com/mapfiles/kml/shapes/open-diamond.png,◇ Unlockable Grating
+37.89366805294057,-80.65523444817592,http://maps.google.com/mapfiles/kml/shapes/polygon.png,⬡ Junction Room/Shaft to Surface
+37.893942605461454,-80.6539387276545,http://maps.google.com/mapfiles/kml/shapes/donut.png,⚪ Shaft To Surface
+37.89333539312375,-80.65761423006607,http://maps.google.com/mapfiles/kml/shapes/donut.png,⚪ Shaft To Surface
+37.89336975947913,-80.659935673188,http://maps.google.com/mapfiles/kml/shapes/donut.png,⚪ Shaft To Surface
+37.89329919390325,-80.66178166950063,http://maps.google.com/mapfiles/kml/shapes/donut.png,⚪ Shaft To Surface
+37.89239430716113,-80.66353985750989,http://maps.google.com/mapfiles/kml/shapes/triangle.png,△ Sewer Outlet
+37.88871456139506,-80.65742850261972,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.8830048827639,-80.65633315740162,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.88586709842975,-80.66096348363789,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.88641006017287,-80.65590576963837,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.88449227531272,-80.65191727745915,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.88390374757709,-80.65132850687327,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.8791379948441,-80.65313910229412,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.881632426675125,-80.66076538782316,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
+37.878038173327525,-80.65567541054565,http://maps.google.com/mapfiles/kml/shapes/donut.png,⚪ Shaft To Surface
+37.888493767706315,-80.66290771239886,http://maps.google.com/mapfiles/kml/shapes/star.png,✩ Statue
