@@ -15,7 +15,7 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Good Luck on your exam. :) <br /><h3>Clay</h3></p>
+                <img src="IMG/Waterdeep.png" style="width:300px;height:300px;"/>
             </div>
         </div>
 
@@ -124,7 +124,6 @@
         <script src="JS/Waterdeep.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX6haxPnf_GlOOJLMl4XX-_y9id7NBzh8&libraries=visualization&callback=initMap"> </script>
-
 
     </form>
 </body>

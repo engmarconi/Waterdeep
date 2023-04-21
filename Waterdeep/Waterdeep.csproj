@@ -67,12 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Population.txt" />
     <Content Include="CSS\app.css" />
     <Content Include="CSS\foundation.css" />
     <Content Include="CSS\Waterdeep.css" />
     <Content Include="IMG\Background.png" />
-    <Content Include="IMG\Waterdeep 15,000 px %28Grid%29.jpg" />
+    <Content Include="IMG\Waterdeep15,000px%28Grid%29.jpg" />
     <Content Include="IMG\Waterdeep.png" />
     <Content Include="IMG\WaterdeepCoat.png" />
     <Content Include="JS\Waterdeep.js" />
@@ -98,7 +97,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
