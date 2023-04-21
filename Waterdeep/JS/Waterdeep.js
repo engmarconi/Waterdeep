@@ -42,6 +42,7 @@ function initMap() {
     getData("Value")
     getData("Icon")
 
+    BuildLogo();
     BuildWaterdeep15Overlays();
     BuildOverlays();
     BuildPolygon();
@@ -99,6 +100,16 @@ function BuildOverlays() {
 
     google.maps.event.addListener(overlays[0], 'click', (mapsMouseEvent) => {
         google.maps.event.trigger(map, 'click', mapsMouseEvent);
+    });
+}
+
+function BuildLogo() {
+    const image =
+        "https://raw.githubusercontent.com/Dhalizm/Logo/main/logo.jpg";
+    const logoMarker = new google.maps.Marker({
+        position: { lat: 37.885896, lng: -80.667151 },
+        map,
+        icon: image,
     });
 }
 
@@ -247,6 +258,7 @@ function ToggleKML() {
     }
     isKmlToggle = !isKmlToggle;
 }
+
 
 function ToggleGradient() {
     var gradient = [

@@ -15,7 +15,29 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <img src="IMG/Waterdeep.png" style="width:300px;height:300px;"/>
+                <div class="row">
+                    <fieldset>
+                     <legend>Waterdeep Guild of GIS</legend>
+                     <div class="left" style="width:50%">
+                    <img src="IMG/Waterdeep.png" style="width:280px;height:200px;"/>
+                     </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <label><strong>Coded by Chido</strong></label>
+                            </li>
+                            <li>
+                        <label><strong>Student Number 1158222</strong></label><br />
+
+                            </li>
+                            <li>
+                        <label><strong>METH 6005 Exam</strong></label>
+
+                            </li>
+                        </ul>
+                     </div>
+                       </fieldset>
+                </div>
             </div>
         </div>
 
