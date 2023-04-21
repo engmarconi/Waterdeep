@@ -71,6 +71,8 @@
     <Content Include="CSS\foundation.css" />
     <Content Include="CSS\Waterdeep.css" />
     <Content Include="IMG\Background.png" />
+    <Content Include="IMG\Map_of_Waterdeep%27s_Sewers.jpg" />
+    <Content Include="IMG\Waterdeep 15,000 px %28Grid%29.jpg" />
     <Content Include="IMG\Waterdeep15,000px%28Grid%29.jpg" />
     <Content Include="IMG\Waterdeep.png" />
     <Content Include="IMG\WaterdeepCoat.png" />
