@@ -10,6 +10,7 @@ var overlays = [];
 var markers = []
 var labels = [];
 var polylines = [];
+var junctions = [];
 var heatmap = null
 var isHeatMapToggle = false;
 var isMarkersToggle = false;
@@ -290,6 +291,8 @@ function BuildPolygon() {
 
 function BuildSewer() {
     polylines = [];
+    junctions = [];
+
     var pathsStr = [
         "37.885286,-80.652668 37.884389,-80.652663",
         "37.884389,-80.652663 37.883317,-80.654475",
@@ -304,8 +307,15 @@ function BuildSewer() {
         "37.882464,-80.652120 37.882006,-80.651245",
     ];
 
+    var junctionstr = [
+        "37.88367721248483,-80.65437932647114",
+        "37.88524689448721,-80.65276690447769",
+        "37.88567248092298,-80.65375021027079",
+        "37.88342574334474,-80.65321900816085",
+        "37.88213048006437,-80.65230742259526",
+    ]
+
     for (var i = 0; i < pathsStr.length; i++) {
-        console.log(pathsStr.length)
         var coordArray = pathsStr[i].split(' ');
         var coordinates = [];
         for (var j = 0; j < coordArray.length; j++) {
@@ -318,7 +328,20 @@ function BuildSewer() {
             geodesic: true,
             strokeColor: "#00137F",
             strokeOpacity: 0.5,
-            strokeWeight: 5,
+            strokeWeight: i < 3 ? 8 : 5,
+        }));
+    }
+
+    for (var j = 0; j < junctionstr.length; j++) {
+        var params = junctionstr[j].split(',');
+        junctions.push(new google.maps.Circle({
+            strokeColor: "#fffff",
+            strokeOpacity: 0.5,
+            strokeWeight: 2,
+            fillColor: "#00137F",
+            fillOpacity: 0.5,
+            center: { lat: parseFloat(params[0]), lng: parseFloat(params[1],) },
+            radius: 15,
         }));
     }
     document.getElementById("SewerCount").innerHTML = "Sewers:" + polylines.length;
@@ -331,16 +354,20 @@ function TogglePoly() {
 
 function ToggleLabel() {
     for (var i = 0; i < labels.length; i++) {
-        labels[i].setMap(isSewerToggle ? null : map);
+        labels[i].setMap(isLabelToggle ? null : map);
     }
-    isSewerToggle = !isSewerToggle;
+    isLabelToggle = !isLabelToggle;
 }
 
 function ToggleSewer() {
     for (var i = 0; i < polylines.length; i++) {
-        polylines[i].setMap(isLabelToggle ? null : map);
+        polylines[i].setMap(isSewerToggle ? null : map);
     }
-    isLabelToggle = !isLabelToggle;
+
+    for (var i = 0; i < junctions.length; i++) {
+        junctions[i].setMap(isSewerToggle ? null : map);
+    }
+    isSewerToggle = !isSewerToggle;
 }
 
 function SetValue(value) {
