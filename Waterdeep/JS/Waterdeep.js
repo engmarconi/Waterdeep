@@ -8,12 +8,16 @@ var heatmapData = []
 var kmlLayers = [];
 var overlays = [];
 var markers = []
+var labels = [];
+var polylines = [];
 var heatmap = null
 var isHeatMapToggle = false;
 var isMarkersToggle = false;
 var isKmlToggle = false;
 var isOverlyToggle = false;
 var isPolyToggle = false;
+var isLabelToggle = false;
+var isSewerToggle = false;
 var currentValue = "";
 var selectedIcon = "";
 var selectedIconName = "";
@@ -41,7 +45,8 @@ function initMap() {
     BuildOverlays();
     BuildPolygon();
     BuildKml();
-
+    BuildLabels();
+    BuildSewer();
 
     map.addListener("click", (mapsMouseEvent) => {
         //console.log(mapsMouseEvent.latLng)
@@ -72,6 +77,19 @@ function BuildWaterdeep15Overlays() {
     });
 }
 
+function BuildLabels() {
+    labels = [];
+    labels.push(new google.maps.Marker({
+        position: new google.maps.LatLng(37.877294, -80.654958),
+        icon: 'https://www.google.com/support/enterprise/static/geo/cdate/art/dots/red_dot.png',
+        label: {
+            text: "Dock ward",
+            color: "#FFF",
+            fontSize: "20px",
+            fontWeight: "bold"
+        }
+    }));
+}
 
 function BuildOverlays() {
     overlays.push(new google.maps.GroundOverlay("IMG/Map_of_Waterdeep's_Sewers.jpg", { north: 37.9002825388484, south: 37.86637486801817, east: -80.64036910809656, west: -80.66978062131493}));
@@ -250,30 +268,79 @@ function ToggleGradient() {
 }
 
 function BuildPolygon() {
-    var polystr = "-80.65007054614142,37.87360500238003,16 -80.64999943924461,37.8736617955915,16 -80.65003349921307,37.87369224773454,16 -80.65009673342941,37.87363808916336,16 -80.65007054614142,37.87360500238003,16";
+    var polystr = "37.876587,-80.658660 37.878210,-80.658845 37.879321,-80.659125 37.879700,-80.658656 37.879704,-80.657325 37.879753,-80.656869 37.879739,-80.656289 37.879732,-80.655137 37.879673,-80.654996 37.879573,-80.654902 37.879658,-80.654671 37.879249,-80.654659 37.879200,-80.653284 37.879150,-80.653207 37.879010,-80.653188 37.879000,-80.652979 37.879107,-80.652599 37.879070,-80.652536, 37.878828,-80.652460 37.878976,-80.651424 37.879387,-80.651458 37.879416,-80.650811 37.876413,-80.651974 37.875237,-80.651958 37.874731,-80.651686 37.874265,-80.650657 37.874091,-80.649954 37.873113,-80.649734 37.872863,-80.650095 37.872687,-80.650523 37.872850,-80.650901 37.873124,-80.651729 37.873463,-80.652480 37.873704,-80.653035 37.874098,-80.653933 37.874202,-80.654550 37.874782,-80.655643 37.875429,-80.656662 37.875855,-80.657381 37.876221,-80.658249 37.876532,-80.658621 37.876587,-80.658660";
     var coordArray = polystr.split(' ');
 
     var coordinates = [];
     for (var i = 0; i < coordArray.length; i++) {
         var params = coordArray[i].split(',');
-        coordinates.push({ lat: parseFloat(params[1]), lng: parseFloat(params[0],) });
+        coordinates.push({ lat: parseFloat(params[0]), lng: parseFloat(params[1],) });
     }
     console.log(coordinates)
 
     polygon = new google.maps.Polygon({
         paths: coordinates,
-        strokeColor: '#ffaa00',
+        strokeColor: '#ff0000',
         strokeOpacity: 1.0,
         strokeWeight: 1,
-        fillColor: '#aaaa00',
+        fillColor: '#ff0000',
         fillOpacity: 0.5
     });
+}
 
+function BuildSewer() {
+    polylines = [];
+    var pathsStr = [
+        "37.885286,-80.652668 37.884389,-80.652663",
+        "37.884389,-80.652663 37.883317,-80.654475",
+        "37.885433,-80.653442 37.883194,-80.653188",
+        "37.884550,-80.654082 37.883735,-80.653834",
+        "37.884167,-80.652826 37.883132,-80.652012",
+        "37.883418,-80.652263 37.882883,-80.652751",
+        "37.883811,-80.652496 37.884149,-80.651191 37.884315,-80.650538",
+        "37.884101,-80.651225 37.883924,-80.650830",
+        "37.882295,-80.652523 37.883181,-80.650827",
+        "37.882824,-80.651562 37.883409,-80.651651",
+        "37.882464,-80.652120 37.882006,-80.651245",
+    ];
+
+    for (var i = 0; i < pathsStr.length; i++) {
+        console.log(pathsStr.length)
+        var coordArray = pathsStr[i].split(' ');
+        var coordinates = [];
+        for (var j = 0; j < coordArray.length; j++) {
+            var params = coordArray[j].split(',');
+            coordinates.push({ lat: parseFloat(params[0]), lng: parseFloat(params[1],) });
+        }
+
+        polylines.push(new google.maps.Polyline({
+            path: coordinates,
+            geodesic: true,
+            strokeColor: "#00137F",
+            strokeOpacity: 0.5,
+            strokeWeight: 5,
+        }));
+    }
+    document.getElementById("SewerCount").innerHTML = "Sewers:" + polylines.length;
 }
 
 function TogglePoly() {
     polygon.setMap(!isPolyToggle ? map : null);
     isPolyToggle = !isPolyToggle;
+}
+
+function ToggleLabel() {
+    for (var i = 0; i < labels.length; i++) {
+        labels[i].setMap(isSewerToggle ? null : map);
+    }
+    isSewerToggle = !isSewerToggle;
+}
+
+function ToggleSewer() {
+    for (var i = 0; i < polylines.length; i++) {
+        polylines[i].setMap(isLabelToggle ? null : map);
+    }
+    isLabelToggle = !isLabelToggle;
 }
 
 function SetValue(value) {
@@ -300,4 +367,3 @@ window.onload = function () {
     window.initMap = initMap();
     modal.style.display = "block";
 }
-

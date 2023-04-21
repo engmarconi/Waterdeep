@@ -20,11 +20,10 @@
         </div>
 
         <div class="left clear">
-            <div id="BaseMap"></div>
+            <div id="BaseMap" style="min-height:750px;"></div>
         </div>
-        <div class="right">
+        <div class="right" style="min-height:750px;">
             <div class="column row">
-
                 <fieldset>
                     <legend>Waterdeep Guild of GIS</legend>
 
