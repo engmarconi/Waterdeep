@@ -53,7 +53,7 @@ function initMap() {
 
 function buildOverlays() {
     overlays = [];
-    overlays.push(new google.maps.GroundOverlay("IMG/Waterdeep15,000px(Grid).jpg", { north: 37.90077202867024, south: 37.86657434334332, east: -80.6393290615508, west: -80.67183799999999 }));
+    overlays.push(new google.maps.GroundOverlay("IMG/Waterdeep 15,000 px (Grid).jpg", { north: 37.90077202867024, south: 37.86657434334332, east: -80.6393290615508, west: -80.67183799999999 }));
     overlays[0].clickable = true;
     overlays[0].setOpacity(1);
 
